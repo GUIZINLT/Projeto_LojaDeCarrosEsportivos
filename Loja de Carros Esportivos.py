@@ -21,7 +21,7 @@ class Carro(ABC):
     @abstractmethod
     def get_tipo(self) -> str: pass
     
-    def calcular_preco(self) -> float:  # Será sobrescrito
+    def calcular_preco(self) -> float:
         return self.preco
     
     def info(self) -> str:
@@ -71,3 +71,4 @@ if __name__ == "__main__":
         loja.add_carro(carro)
     
     loja.lista()
+
